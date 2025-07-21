@@ -363,13 +363,19 @@ namespace AvalonDock.Layout
 			if (root?.Manager?.LayoutUpdateStrategy != null)
 				added = root.Manager.LayoutUpdateStrategy.BeforeInsertAnchorable(root as LayoutRoot, this, PreviousContainer);
 
-			if (!added && PreviousContainer != null)
+			if (!added && PreviousContainer is ILayoutGroup previousContainerAsLayoutGroup )
 			{
-				var previousContainerAsLayoutGroup = PreviousContainer as ILayoutGroup;
-				if (PreviousContainerIndex < previousContainerAsLayoutGroup.ChildrenCount)
-					previousContainerAsLayoutGroup.InsertChildAt(PreviousContainerIndex, this);
-				else
-					previousContainerAsLayoutGroup.InsertChildAt(previousContainerAsLayoutGroup.ChildrenCount, this);
+				try
+				{
+					if (PreviousContainerIndex < previousContainerAsLayoutGroup.ChildrenCount)
+						previousContainerAsLayoutGroup.InsertChildAt(PreviousContainerIndex, this);
+					else
+						previousContainerAsLayoutGroup.InsertChildAt(previousContainerAsLayoutGroup.ChildrenCount, this);
+				}
+				catch (ArgumentOutOfRangeException)
+				{
+					previousContainerAsLayoutGroup.InsertChildAt(0, this);
+				}
 
 				Parent = previousContainerAsLayoutGroup;
 				IsSelected = true;

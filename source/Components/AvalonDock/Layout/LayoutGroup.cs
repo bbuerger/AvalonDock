@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
 
 namespace AvalonDock.Layout
@@ -94,6 +95,7 @@ namespace AvalonDock.Layout
 		}
 
 		/// <inheritdoc cref="ILayoutGroup" />
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public void InsertChildAt(int index, ILayoutElement element)
 		{
 			if (element is T t)
@@ -101,6 +103,7 @@ namespace AvalonDock.Layout
 		}
 
 		/// <inheritdoc cref="ILayoutContainer" />
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public void RemoveChild(ILayoutElement element)
 		{
 			if (element is T t)
