@@ -1,18 +1,17 @@
-﻿namespace AvalonDockTest
+namespace AvalonDockTest
 {
 	using System.Threading.Tasks;
 
 	using Microsoft.VisualStudio.TestTools.UnitTesting;
-	using Microsoft.VisualStudio.TestTools.UnitTesting.STAExtensions;
 
 	using AvalonDock.Layout.Serialization;
 	using AvalonDockTest.TestHelpers;
 	using AvalonDockTest.Views;
 
-	[STATestClass]
+	[TestClass]
 	public class LayoutAnchorableFloatingWindowControlTest : AutomationTestBase
 	{
-		[STATestMethod]
+		[TestMethod]
 		public async Task CloseWithHiddenFloatingWindowsTest()
 		{
 			LayoutAnchorableFloatingWindowControlTestWindow window = await WindowHelpers.CreateInvisibleWindowAsync<LayoutAnchorableFloatingWindowControlTestWindow>();

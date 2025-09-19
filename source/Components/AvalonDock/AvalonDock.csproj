@@ -1,35 +1,34 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <RootNamespace>AvalonDock</RootNamespace>
-    <TargetFrameworks>netcoreapp3.0;net5.0-windows;net40</TargetFrameworks>
     <UseWPF>true</UseWPF>
-    <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>sn.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>4.72.1</Version>
-    <AssemblyVersion>4.72.1</AssemblyVersion>
-    <FileVersion>4.72.1</FileVersion>
-    <PackageVersion>4.72.1</PackageVersion>
+    <Version>4.72.5</Version>
+    <AssemblyVersion>4.72.5</AssemblyVersion>
+    <FileVersion>4.72.5</FileVersion>
+    <PackageVersion>4.72.5</PackageVersion>
     <Company>Open Source</Company>
     <Product>Dirkster.AvalonDock</Product>
-    <Copyright>2017-2023</Copyright>
+    <Copyright>2017-2025</Copyright>
     <Description>This assembly implements a docking layout system for WPF.</Description>
-    <PackageProjectUrl>https://github.com/Dirkster99/AvalonDock</PackageProjectUrl>
+    <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+    <!--<PackageProjectUrl>https://github.com/Dirkster99/AvalonDock</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Dirkster99/AvalonDock</RepositoryUrl>
     <PackageId>Dirkster.AvalonDock</PackageId>
     <Authors>https://github.com/Dirkster99/AvalonDock</Authors>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>-->
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net.5.0-windows|AnyCPU'">
+  <!--<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net5.0-windows|AnyCPU'">
     <DefineConstants />
-  </PropertyGroup>
+  </PropertyGroup>-->
 
   <ItemGroup>
     <Resource Include="**\*.png" />
   </ItemGroup>
 
   <!-- NuGet Packaging -->
-  <ItemGroup>
+  <!--<ItemGroup>
     <None Include="LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
@@ -47,7 +46,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
+  </ItemGroup>-->
 
   <!--PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>TRACE;DEBUG</DefineConstants>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="AsyncEnumerator" Version="4.0.2" />
+    <PackageVersion Include="CsvHelper" Version="33.0.1" />
+    <PackageVersion Include="DevExpress.Document.Processor" Version="24.1.3" />
+    <PackageVersion Include="DevExpress.Win.Charts" Version="24.1.3" />
+    <PackageVersion Include="DevExpress.Win.Spreadsheet" Version="24.1.3" />
+    <PackageVersion Include="DevExpress.Wpf.PdfViewer" Version="24.1.3" />
+    <PackageVersion Include="DevExpress.Wpf.RichEdit" Version="24.1.3" />
+    <PackageVersion Include="DevExpress.Wpf.SpellChecker" Version="24.1.3" />
+    <PackageVersion Include="DevExpress.Wpf.Spreadsheet" Version="24.1.3" />
+    <PackageVersion Include="EntityFramework" Version="6.5.1" />
+    <PackageVersion Include="gong-wpf-dragdrop" Version="3.2.1" />
+    <PackageVersion Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+    <PackageVersion Include="HtmlAgilityPack" Version="1.11.61" />
+    <PackageVersion Include="Humanizer.Core.de" Version="2.14.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.SystemWebAdapters" Version="1.3.0" />
+    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.VisualBasic" Version="4.10.0" />
+    <PackageVersion Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageVersion Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.421302" />
+    <PackageVersion Include="Microsoft.Exchange.WebServices" Version="2.2.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageVersion Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <PackageVersion Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1004" />
+    <PackageVersion Include="Microsoft.Office.Interop.PowerPoint" Version="15.0.4420.1018" />
+    <PackageVersion Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+    <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.11.3" />
+    <PackageVersion Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.2592.51" />
+    <PackageVersion Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    <PackageVersion Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.122" />
+    <PackageVersion Include="MicrosoftOfficeCore" Version="15.0.0" />
+    <PackageVersion Include="Moq" Version="4.20.70" />
+    <PackageVersion Include="MSTest" Version="3.5.0" />
+    <PackageVersion Include="MSTest.TestAdapter" Version="3.5.0" />
+    <PackageVersion Include="MSTest.TestFramework" Version="3.6.0" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageVersion Include="PdfSharp.Xps.dotNet.Core" Version="1.0.2" />
+    <PackageVersion Include="Polly" Version="8.4.1" />
+    <PackageVersion Include="SQLite.CodeFirst" Version="1.7.0.36" />
+    <PackageVersion Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageVersion Include="System.ComponentModel.Composition" Version="8.0.0" />
+    <PackageVersion Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageVersion Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageVersion Include="System.Data.SQLite" Version="1.0.118" />
+    <PackageVersion Include="System.Data.SQLite.Core" Version="1.0.118" />
+    <PackageVersion Include="System.Data.SQLite.EF6" Version="1.0.118" />
+    <PackageVersion Include="System.Data.SQLite.Linq" Version="1.0.118" />
+    <PackageVersion Include="System.DirectoryServices" Version="8.0.0" />
+    <PackageVersion Include="System.Drawing.Common" Version="8.0.8" />
+    <PackageVersion Include="System.IO" Version="4.3.0" />
+    <PackageVersion Include="System.IO.FileSystem.AccessControl" Version="5.0.0" />
+    <PackageVersion Include="System.Management" Version="8.0.0" />
+    <PackageVersion Include="System.Net.Http" Version="4.3.4" />
+    <PackageVersion Include="System.Reactive" Version="6.0.1" />
+    <PackageVersion Include="System.Reactive.Interfaces" Version="6.0.1" />
+    <PackageVersion Include="System.Reactive.Linq" Version="6.0.1" />
+    <PackageVersion Include="System.Runtime" Version="4.3.1" />
+    <PackageVersion Include="System.Runtime.Caching" Version="8.0.0" />
+    <PackageVersion Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+    <PackageVersion Include="System.Security.AccessControl" Version="6.0.1" />
+    <PackageVersion Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+    <PackageVersion Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
+    <PackageVersion Include="System.Security.Cryptography.Primitives" Version="4.3.0" />
+    <PackageVersion Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
+    <PackageVersion Include="System.Security.Principal.Windows" Version="5.0.0" />
+    <PackageVersion Include="System.ServiceModel.Duplex" Version="6.0.0" />
+    <PackageVersion Include="System.ServiceModel.Federation" Version="6.0.0" />
+    <PackageVersion Include="System.ServiceModel.Http" Version="8.0.0" />
+    <PackageVersion Include="System.ServiceModel.NetTcp" Version="6.0.0" />
+    <PackageVersion Include="System.ServiceModel.Security" Version="6.0.0" />
+    <PackageVersion Include="System.ServiceModel.Primitives" Version="8.0.0" />
+    <PackageVersion Include="System.ServiceModel.Syndication" Version="8.0.0" />
+    <PackageVersion Include="System.ServiceProcess.ServiceController" Version="8.0.0" />
+    <PackageVersion Include="System.Text.Encoding.CodePages" Version="8.0.0" />
+    <PackageVersion Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+    <PackageVersion Include="Tesseract" Version="5.2.0" />
+    <PackageVersion Include="xunit" Version="2.9.0" />
+    <PackageVersion Include="xunit.abstractions" Version="2.0.3" />
+    <PackageVersion Include="xunit.analyzers" Version="1.15.0" />
+    <PackageVersion Include="xunit.assert" Version="2.9.0" />
+    <PackageVersion Include="xunit.core" Version="2.9.0" />
+    <PackageVersion Include="xunit.extensibility.core" Version="2.9.0" />
+    <PackageVersion Include="xunit.extensibility.execution" Version="2.9.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageVersion Include="Google.Protobuf" Version="3.28.0" />
+    <PackageVersion Include="Google.Protobuf.Tools" Version="3.28.0" />
+    <PackageVersion Include="Grpc.Core" Version="2.46.6" />
+    <PackageVersion Include="Grpc.Tools" Version="2.66.0" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

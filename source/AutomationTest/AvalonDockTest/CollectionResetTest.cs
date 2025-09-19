@@ -1,7 +1,6 @@
-﻿using AvalonDockTest.TestHelpers;
+using AvalonDockTest.TestHelpers;
 using AvalonDockTest.Views;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.VisualStudio.TestTools.UnitTesting.STAExtensions;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -15,7 +14,7 @@ namespace AvalonDockTest
 	/// of AvalonDock clear the associated collection if the notification was received, instead
 	/// of iterating for any remaining items in the collection.
 	/// </summary>
-	[STATestClass]
+	[TestClass]
 	public class CollectionResetTest : AutomationTestBase
 	{
 		#region Notification Counting for CollectionChanged
@@ -169,7 +168,7 @@ namespace AvalonDockTest
 		}
 		#endregion
 
-		[STATestMethod]
+		[TestMethod]
 		public void CollectionResetAnchorablesTest()
 		{
 			CollectionResetTestWindow window = TestWindow.Value;
@@ -179,7 +178,7 @@ namespace AvalonDockTest
 			TestResetNotification(adapter);
 		}
 
-		[STATestMethod]
+		[TestMethod]
 		public void CollectionResetDocumentsTest()
 		{
 			CollectionResetTestWindow window = TestWindow.Value;

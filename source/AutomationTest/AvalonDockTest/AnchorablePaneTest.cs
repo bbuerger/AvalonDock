@@ -1,7 +1,6 @@
 namespace AvalonDockTest
 {
 	using Microsoft.VisualStudio.TestTools.UnitTesting;
-	using Microsoft.VisualStudio.TestTools.UnitTesting.STAExtensions;
 	using System.Threading.Tasks;
 	using AvalonDock.Layout;
 	using AvalonDockTest.TestHelpers;
@@ -11,10 +10,10 @@ namespace AvalonDockTest
 	using System.Linq;
 	using AvalonDock.Controls;
 
-	[STATestClass]
+	[TestClass]
 	public class AnchorablePaneTest : AutomationTestBase
 	{
-		[STATestMethod]
+		[TestMethod]
 		public void AnchorablePaneHideCloseTest()
 		{
 			TestHost.SwitchToAppThread();
@@ -35,7 +34,7 @@ namespace AvalonDockTest
 			Assert.AreEqual(expectedContainer, actualContainer);
 		}
 
-		[STATestMethod]
+		[TestMethod]
 		public void AnchorablePaneHideCloseEventsFiredTest()
 		{
 			// Create the window with 2 LayoutAnchorable items
@@ -103,7 +102,7 @@ namespace AvalonDockTest
 			Assert.AreEqual(windows.Screen2, isClosedRaised.First());
 		}
 
-		[STATestMethod]
+		[TestMethod]
 		public void AnchorablePaneHideCloseEventsCancelledTest()
 		{
 			// Create the window with 2 LayoutAnchorable items
@@ -176,7 +175,7 @@ namespace AvalonDockTest
 			Assert.AreEqual(windows.Screen2, isClosingRaised.First());
 		}
 
-		[STATestMethod]
+		[TestMethod]
 		public void AnchorablePaneHideEventRedirectTest()
 		{
 			// Create the window with 2 LayoutAnchorable items
