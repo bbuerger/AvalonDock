@@ -2097,7 +2097,7 @@ namespace AvalonDock
 
 			SetupAutoHideWindow();
 
-			foreach (var fwc in _fwHiddenList)
+			foreach (var fwc in _fwHiddenList.ToArray())
 			{
 				fwc.EnableBindings();
 				if (fwc.KeepContentVisibleOnClose)
@@ -2111,7 +2111,7 @@ namespace AvalonDock
 			_fwHiddenList.Clear();
 
 			// load floating windows not already loaded! (issue #59 & #254 & #426)
-			foreach (var fw in Layout.FloatingWindows.Where(fw => !_fwList.Any(fwc => fwc.Model == fw)))
+			foreach (var fw in Layout.FloatingWindows.Where(fw => !_fwList.Any(fwc => fwc.Model == fw)).ToList())
 				CreateUIElementForModel(fw);
 
 			//create the overlaywindow if it's possible

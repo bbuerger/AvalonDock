@@ -1,4 +1,4 @@
-﻿/************************************************************************
+/************************************************************************
    AvalonDock
 
    Copyright (C) 2007-2013 Xceed Software Inc.
@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Markup;
 using System;
+using System.Reflection;
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -49,3 +50,8 @@ using System;
 [assembly: XmlnsDefinition("http://schemas.microsoft.com/winfx/2006/xaml/presentation", "AvalonDock.Converters")]
 [assembly: XmlnsDefinition("http://schemas.microsoft.com/winfx/2006/xaml/presentation", "AvalonDock.Layout")]
 [assembly: XmlnsDefinition("http://schemas.microsoft.com/winfx/2006/xaml/presentation", "AvalonDock.Themes")]
+
+
+// Set assembly version
+[assembly: AssemblyVersion("4.72.4")]
+[assembly: AssemblyFileVersion("4.72.4")]
