@@ -1693,8 +1693,8 @@ namespace AvalonDock
 						newFW.Hide();
 				}), DispatcherPriority.Send);
 
-				if (panegroup != null && panegroup.IsMaximized)
-					newFW.WindowState = WindowState.Maximized;
+				//if (panegroup != null && panegroup.IsMaximized) // BB does not work properly when using two monitors (appears on wrong monitor)
+				//	newFW.WindowState = WindowState.Maximized;
 				return newFW;
 			}
 
@@ -2100,6 +2100,9 @@ namespace AvalonDock
 			foreach (var fwc in _fwHiddenList.ToArray())
 			{
 				fwc.EnableBindings();
+				var currentWindow = Window.GetWindow(this);
+				if (fwc.Owner != currentWindow)
+					fwc.Owner = currentWindow;
 				if (fwc.KeepContentVisibleOnClose)
 				{
 					fwc.Show();
