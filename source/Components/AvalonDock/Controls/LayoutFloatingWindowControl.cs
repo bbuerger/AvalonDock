@@ -692,6 +692,8 @@ namespace AvalonDock.Controls
 		{
 			if (_dragService == null)
 			{
+				if (this.Model?.Root?.Manager == null)
+					return;
 				_dragService = new DragService(this);
 				SetIsDragging(true);
 			}

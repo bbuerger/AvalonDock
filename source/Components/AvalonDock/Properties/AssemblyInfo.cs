@@ -53,5 +53,5 @@ using System.Reflection;
 
 
 // Set assembly version
-[assembly: AssemblyVersion("4.72.6")]
-[assembly: AssemblyFileVersion("4.72.6")]
+[assembly: AssemblyVersion("4.72.7")]
+[assembly: AssemblyFileVersion("4.72.7")]
