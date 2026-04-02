@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
 		<RootNamespace>AvalonDock</RootNamespace>
-		<PackageId>ALAP.AvalonDock</PackageId>
+		<PackageId>Dirkster.AvalonDock</PackageId>
 		<TargetFrameworks>$(ComponentTargetFrameworks)</TargetFrameworks>
 		<UseWPF>true</UseWPF>
         <SignAssembly>true</SignAssembly>

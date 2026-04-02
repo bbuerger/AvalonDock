@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
 		<RootNamespace>AvalonDock.Themes</RootNamespace>
-		<PackageId>ALAP.AvalonDock.Themes.Metro</PackageId>
+		<PackageId>Dirkster.AvalonDock.Themes.Metro</PackageId>
 		<TargetFrameworks>$(ComponentTargetFrameworks)</TargetFrameworks>
 		<UseWPF>true</UseWPF>
         <AssemblyOriginatorKeyFile>sn.snk</AssemblyOriginatorKeyFile>

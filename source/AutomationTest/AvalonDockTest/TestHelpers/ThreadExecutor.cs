@@ -1,10 +1,4 @@
-﻿// ------------------------------------------------------------------------------------------------------------
-// <copyright file="ThreadExecutor.cs" company="Alps Alpine Europe GmbH">
-// All rights reserved
-// </copyright>
-// ------------------------------------------------------------------------------------------------------------
-
-using System;
+﻿using System;
 #if !NET452
 using System.Runtime.InteropServices;
 #endif

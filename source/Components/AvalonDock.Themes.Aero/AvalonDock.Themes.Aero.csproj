@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
 		<RootNamespace>AvalonDock.Themes</RootNamespace>
-		<PackageId>ALAP.AvalonDock.Themes.Aero</PackageId>
+		<PackageId>Dirkster.AvalonDock.Themes.Aero</PackageId>
 		<TargetFrameworks>$(ComponentTargetFrameworks)</TargetFrameworks>
         <AssemblyOriginatorKeyFile>sn.snk</AssemblyOriginatorKeyFile>
         <SignAssembly>true</SignAssembly>
