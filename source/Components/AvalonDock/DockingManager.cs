@@ -1726,10 +1726,11 @@ namespace AvalonDock
 						newFW.Show();
 					else
 						newFW.Hide();
+      
+      					if (panegroup != null && panegroup.IsMaximized)
+						newFW.WindowState = WindowState.Maximized;
 				}), DispatcherPriority.Send);
 
-				if (panegroup != null && panegroup.IsMaximized)
-					newFW.WindowState = WindowState.Maximized;
 				return newFW;
 			}
 
