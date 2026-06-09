@@ -650,7 +650,7 @@ namespace AvalonDock.Controls
 			if (OwnedByDockingManagerWindow && manager != null)
 			{
 				this.SetParentToMainWindowOf(manager);
-				CopyInputBindingsFromOwner();
+				CopyInputBindingsFromOwner(manager);
 			}
 			else
 			{
@@ -662,13 +662,36 @@ namespace AvalonDock.Controls
 		/// Copies InputBindings from the Owner window so that keyboard shortcuts
 		/// defined on the main window also work in floating windows.
 		/// </summary>
-		private void CopyInputBindingsFromOwner()
+		private void CopyInputBindingsFromOwner(DockingManager manager)
 		{
 			if (Owner == null) return;
 
 			InputBindings.Clear();
 			foreach (InputBinding binding in Owner.InputBindings)
+			{
+				if (binding is KeyBinding keyBinding)
+				{
+					if (manager.ExcludeTextEditingInputBindingsFromFloatingWindows && IsTextEditingGesture(keyBinding))
+						continue;
+				}
+
 				InputBindings.Add(binding);
+			}
+		}
+
+		private static bool IsTextEditingGesture(KeyBinding keyBinding)
+		{
+			if (keyBinding.Modifiers != ModifierKeys.Control)
+			{
+				return false;
+			}
+
+			return keyBinding.Key == Key.C ||
+				   keyBinding.Key == Key.X ||
+				   keyBinding.Key == Key.V ||
+				   keyBinding.Key == Key.A ||
+				   keyBinding.Key == Key.Z ||
+				   keyBinding.Key == Key.Y;
 		}
 
 		private const double KeyboardMoveStep = 10.0;

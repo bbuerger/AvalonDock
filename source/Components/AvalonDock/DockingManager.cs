@@ -1102,6 +1102,24 @@ namespace AvalonDock
 			set => SetValue(AutoHideDelayProperty, value);
 		}
 
+		/// <summary>
+		/// Implements the backing store of the <see cref="ExcludeTextEditingInputBindingsFromFloatingWindows"/> dependency property.
+		/// </summary>
+		public static readonly DependencyProperty ExcludeTextEditingInputBindingsFromFloatingWindowsProperty =
+			DependencyProperty.Register(nameof(ExcludeTextEditingInputBindingsFromFloatingWindows), typeof(bool), typeof(DockingManager), new PropertyMetadata(false));
+
+		/// <summary>
+		/// Gets or sets a value indicating whether text editing shortcuts are excluded from copied floating-window input bindings.
+		/// </summary>
+		[Bindable(true)]
+		[Description("Gets or sets a value indicating whether text editing input bindings are excluded from copied floating-window input bindings.")]
+		[Category("FloatingWindow")]
+		public bool ExcludeTextEditingInputBindingsFromFloatingWindows
+		{
+			get { return (bool)GetValue(ExcludeTextEditingInputBindingsFromFloatingWindowsProperty); }
+			set { SetValue(ExcludeTextEditingInputBindingsFromFloatingWindowsProperty, value); }
+		}
+
 		/// <summary>Gets all <see cref="LayoutFloatingWindowControl"/> instances managed by this framework.</summary>
 		[Bindable(false)]
 		[Description("Enumerates all LayoutFloatingWindowControls managed by this framework.")]
